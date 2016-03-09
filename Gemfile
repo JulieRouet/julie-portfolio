@@ -22,7 +22,7 @@ gem 'bootstrap-sass'
 # Hook locally mail
 # Run deamon by call him in termilal like so : maicatcher
 # Then go  http://127.0.0.1:1080
-
+gem 'parallax-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

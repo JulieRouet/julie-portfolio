@@ -1,0 +1,194 @@
+
+/************Header**************/
+header  {
+  margin-top: 150px;
+  margin-bottom: 150px;
+  }
+
+
+img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+.container {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.expand-width {
+  width: 100%;
+}
+
+
+
+.aspect {
+  opacity: 0.2;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.15;
+}
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg);
+}
+
+.layer:nth-child(2) {
+  margin-left: 30%;
+  margin-top: 15%;
+  opacity: 1.0;
+}
+.layer:nth-child(2) button {
+  -webkit-transform: rotate(120deg);
+}
+
+.layer:nth-child(3) {
+  opacity: 0.45;
+}
+.layer:nth-child(3) button {
+  -webkit-transform: rotate(90deg);
+}
+
+.layer:nth-child(4) {
+  opacity: 0.60;
+}
+.layer:nth-child(4) button {
+  -webkit-transform: rotate(60deg);
+}
+
+.layer:nth-child(5) {
+  opacity: 0.75;
+}
+.layer:nth-child(5) button {
+  -webkit-transform: rotate(30deg);
+}
+
+.layer:nth-child(6) {
+  opacity: 0.90;
+}
+.layer:nth-child(6) button {
+}
+
+
+
+
+
+/************GENERAL PROPRIERTY OF NAV BAR**************/
+
+/************fonts**************/
+
+
+body {
+  font-family: 'Abril Fatface';
+}
+
+.titre {
+  font-family: 'Noto Sans', sans-serif;
+
+}
+
+nav {
+    min-height: 40px!important;
+    border: none!important;
+}
+
+.navbar-default {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+ul.navbar-nav {
+    text-align: center;
+    float: none;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float: none;
+    margin-right: -8px;
+}
+
+.navbar-nav > li > a{
+    padding: 10px;
+    color: #000!important;
+}
+
+.navbar-nav .open .dropdown-menu > li > a{
+    color: #000!important;
+}
+
+.dpactive > a,
+.dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-toggle:hover,
+.navbar-toggle:focus,
+.navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-nav > li.open > a:hover,
+.navbar-nav > li.open > a:focus {
+    background-color: #f5f2da!important;
+}
+    /**** NAV SM MD LG PROPRIETY ****/
+
+.unactive {
+    padding: 10px;
+    background-color: #f5f2da;
+    color: #777;
+    cursor: default;
+}
+
+.MarginBottom{
+    margin-bottom: 8px;
+
+}
+    /***** NAV XS PROPRIETY *****/
+
+#Logo {
+    height: 50px;
+}
+
+.unactiveXs {
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #f5f2da!important;
+    color: #777;
+    cursor: default;
+}
+
+.unactiveXsDp {
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #f5f2da!important;
+    color: #777;
+    cursor: default;
+    padding-left: 25px;
+}
+    /***** NAV XS FIXED ****/
+@media (max-width: 767px) {
+
+.nav-fixed {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    }
+}
+
+/***** portfolio ****/
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
