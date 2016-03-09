@@ -1,85 +1,12 @@
-
+/*
 /************Header**************/
-header  {
-  margin-top: 150px;
-  margin-bottom: 150px;
-  }
-
-
-img {
-  display: block;
+header {
+  padding-left: 30%;
+  padding-top: 10%;
+  padding-bottom: 10%;
   width: 100%;
 }
 
-
-
-
-.container {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto;
-
-}
-
-.scene {
-  padding: 0;
-  margin: 0;
-}
-
-
-
-.expand-width {
-  width: 100%;
-}
-
-
-
-.aspect {
-  opacity: 0.2;
-}
-
-.layer:nth-child(1) {
-  opacity: 0.15;
-}
-.layer:nth-child(1) button {
-  -webkit-transform: rotate(150deg);
-}
-
-.layer:nth-child(2) {
-  margin-left: 30%;
-  margin-top: 15%;
-  opacity: 1.0;
-}
-.layer:nth-child(2) button {
-  -webkit-transform: rotate(120deg);
-}
-
-.layer:nth-child(3) {
-  opacity: 0.45;
-}
-.layer:nth-child(3) button {
-  -webkit-transform: rotate(90deg);
-}
-
-.layer:nth-child(4) {
-  opacity: 0.60;
-}
-.layer:nth-child(4) button {
-  -webkit-transform: rotate(60deg);
-}
-
-.layer:nth-child(5) {
-  opacity: 0.75;
-}
-.layer:nth-child(5) button {
-  -webkit-transform: rotate(30deg);
-}
-
-.layer:nth-child(6) {
-  opacity: 0.90;
-}
-.layer:nth-child(6) button {
-}
 
 
 
@@ -107,6 +34,7 @@ nav {
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
+    display: block;;
 }
 
 ul.navbar-nav {
@@ -180,10 +108,8 @@ ul.navbar-nav {
 @media (max-width: 767px) {
 
 .nav-fixed {
-    position: fixed;
     right: 0;
     left: 0;
-    z-index: 1030;
     }
 }
 
