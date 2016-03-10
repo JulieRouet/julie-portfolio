@@ -1,8 +1,9 @@
 /*
 /************Header**************/
 header {
-  padding-left: 30%;
-  padding-top: 10%;
+
+ text-align: center!important;
+ padding-top: 10%;
   padding-bottom: 10%;
   width: 100%;
 }
@@ -34,7 +35,8 @@ nav {
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
-    display: block;;
+    display: block;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
 }
 
 ul.navbar-nav {
@@ -65,14 +67,14 @@ ul.navbar-nav {
 .navbar-nav .open .dropdown-menu > li > a:hover,
 .navbar-nav > li.open > a:hover,
 .navbar-nav > li.open > a:focus {
-    background-color: #f5f2da!important;
+    background-color: white!important;
 }
     /**** NAV SM MD LG PROPRIETY ****/
 
 .unactive {
     padding: 10px;
-    background-color: #f5f2da;
-    color: #777;
+    background-color: white;
+    color: black;
     cursor: default;
 }
 
@@ -90,8 +92,8 @@ ul.navbar-nav {
     display: block;
     height: 40px;
     padding-top: 10px;
-    background-color: #f5f2da!important;
-    color: #777;
+    background-color: white!important;
+    color: black;
     cursor: default;
 }
 
@@ -99,8 +101,8 @@ ul.navbar-nav {
     display: block;
     height: 40px;
     padding-top: 10px;
-    background-color: #f5f2da!important;
-    color: #777;
+    background-color: white!important;
+    color: black;
     cursor: default;
     padding-left: 25px;
 }
@@ -112,6 +114,56 @@ ul.navbar-nav {
     left: 0;
     }
 }
+
+/***** présentation ****/
+
+.presentation {
+  margin-top: 5%;
+}
+
+ .julie {
+  display: inline-block!important;
+    height: 500px;
+      margin-left: 10%;
+}
+ .one {
+  display: inline-block!important;
+    height: 150px;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+h3 {
+  text-align: center;
+
+}
+
+hr {
+  margin-top: 15%;
+  height: 1px;
+	border: 0;
+	color: black;
+	background-color: black;
+
+}
+p {
+  font-family: 'Inconsolata';
+
+
+}
+
+/***** présentation ****/
+
+/***** vidéo ****/
+.two {
+    display: inline-block!important;
+    height: 150px;
+
+    margin-top: 10%;
+}
+
+
+/***** vidéo ****/
 
 /***** portfolio ****/
 
