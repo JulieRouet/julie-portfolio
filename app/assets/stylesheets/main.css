@@ -1,4 +1,4 @@
-/*
+
 /************Header**************/
 header {
 
@@ -7,7 +7,7 @@ header {
   padding-bottom: 10%;
   width: 100%;
 }
-
+/************Header**************/
 
 
 
@@ -47,7 +47,6 @@ ul.navbar-nav {
 .navbar-nav > li {
     display: inline-block;
     float: none;
-    margin-right: -8px;
 }
 
 .navbar-nav > li > a{
@@ -115,17 +114,23 @@ ul.navbar-nav {
     }
 }
 
-/***** présentation ****/
+/************************* endnavbar *********************/
 
+
+/************************* présentation *********************/
+.row {
+  margin: 0!important;
+}
 .presentation {
   margin-top: 5%;
 }
 
  .julie {
   display: inline-block!important;
-    height: 500px;
-      margin-left: 10%;
+  height: 500px;
+  margin-left: 10%;
 }
+
  .one {
   display: inline-block!important;
     height: 150px;
@@ -135,13 +140,13 @@ ul.navbar-nav {
 
 h3 {
   text-align: center;
-
 }
 
 hr {
   margin-top: 15%;
   height: 1px;
 	border: 0;
+  width: 100%;
 	color: black;
 	background-color: black;
 
@@ -152,21 +157,42 @@ p {
 
 }
 
-/***** présentation ****/
+/************************endprésentation *********************/
 
-/***** vidéo ****/
+/******************************** vidéo ************************/
 .two {
     display: inline-block!important;
     height: 150px;
-
+    margin-left: 40%;
     margin-top: 10%;
 }
 
+.bouton_pdf {
+  background-color: pink;
+  display: inline-block!important;
+}
+/******************************** vidéo ************************/
 
-/***** vidéo ****/
+/***************************** portfolio ***********************/
+.tree {
+ display: inline-block!important;
+   height: 150px;
+   margin-top: 3%;
+   margin-left: 15%;
+}
 
-/***** portfolio ****/
+
+.text_portfolio {
+  margin-left: 8%;
+
+}
+
+.container {
+  margin-top: 3%;
+
+}
 
 .portfolio-item {
     margin-bottom: 25px;
 }
+/***************************** portfolio ***********************/
