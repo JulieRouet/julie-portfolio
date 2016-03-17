@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   root 'static_pages#home'
   get 'pdf'=>'static_pages#pdf'
 
+
   # Example of regular route:
   #  get 'products/:id' => 'catalog#view'
 

@@ -3,10 +3,12 @@
 header {
 
  text-align: center!important;
- padding-top: 10%;
-  padding-bottom: 10%;
+
+ margin: 0;
   width: 100%;
-  /*height: 100vh;*/
+  height: 80vh;
+  overflow: hidden;
+  padding: 0;
   }
 
 .sousnav {
@@ -16,8 +18,8 @@ header {
 
 /************parallax**************/
 
-/*
-img {
+
+.para {
   display: block;
   width: 100%;
 }
@@ -33,6 +35,7 @@ img {
 .scene {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 
@@ -47,6 +50,11 @@ img {
   opacity: 0.2;
 }
 
+.layer{
+  width: 100%;
+
+}
+
 .layer:nth-child(1) {
   opacity: 0.15;
 }
@@ -56,7 +64,9 @@ img {
 
 .layer:nth-child(2) {
   ;
-  margin-top: 15%;
+  width : 50%;
+  margin-top: 10%;
+  margin-left: 25%;
   opacity: 1.0;
 }
 .layer:nth-child(2) button {
@@ -88,7 +98,7 @@ img {
   opacity: 0.90;
 }
 .layer:nth-child(6) button {
-}*/
+}
 
 
 
@@ -100,14 +110,13 @@ img {
 /************fonts**************/
 
 
-body {
+li {
   font-family: 'Abril Fatface';
-}
-
-.titre {
-  font-family: 'Noto Sans', sans-serif;
+  font-size: 150%;
 
 }
+
+
 
 nav {
     min-height: 40px!important;
@@ -119,6 +128,7 @@ nav {
     border-color: #fff;
     display: block;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff));
+    margin-top: 3%;
 }
 
 ul.navbar-nav {
@@ -209,19 +219,20 @@ ul.navbar-nav {
 
  .julie {
   display: inline-block!important;
-  height: 500px;
+  height: 800px;
   margin-left: 10%;
 }
 
  .one {
   display: inline-block!important;
-    height: 150px;
-    margin-top: 3%;
+    height: 250px;
+    margin-top: 7%;
     margin-left: 35%;
 }
 
 h3 {
   text-align: center;
+  font-family: 'Abril Fatface';
 }
 
 hr {
@@ -235,6 +246,7 @@ hr {
 }
 p {
   font-family: 'Inconsolata';
+  font-size: 150%!important;
 
 
 }
@@ -242,17 +254,15 @@ p {
 /************************endprésentation *********************/
 
 /******************************** vidéo ************************/
+
 .two {
     display: inline-block!important;
-    height: 150px;
-    margin-left: 40%;
+    height: 200px;
+    margin-left: 50%;
     margin-top: 90%;
 }
 
-.bouton_pdf {
-  background-color: pink;
-  display: inline-block!important;
-}
+
 /******************************** vidéo ************************/
 
 /***************************** portfolio ***********************/
@@ -260,17 +270,21 @@ p {
  display: inline-block!important;
    height: 150px;
    margin-top: 70%;
-
+   height: 200px;
 }
+
 
 
 .text_portfolio {
   margin-left: 8%;
+  padding-bottom: 10%;
+
 
 }
 
 .container {
-  margin-top: 4%;
+  margin-top: 7%;
+
 
 }
 
@@ -278,3 +292,14 @@ p {
     margin-bottom: 40px;
 }
 /***************************** portfolio ***********************/
+
+/***************************** contact ***********************/
+
+.four {
+    display: inline-block!important;
+    height: 150px;
+    margin-top: 5%;
+}
+.contactez {
+    display: inline-block!important;
+    }

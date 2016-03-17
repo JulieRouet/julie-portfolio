@@ -6,17 +6,18 @@
 <body>
 <header>
 
-  	<div class="container-fluid">
+  	<div id="header" class="container-fluid">
   		<ul id="scene" class="scene">
-  			<li class="layer" data-depth="2.00"><img src=""></li>
-  			<li class="layer" data-depth="0.00"><img src="/img/logo.png"></li>
-  			<li class="layer" data-depth="0.50"><img src="/img/feuilles1.png"></li>
-  			<li class="layer" data-depth="0.00"><img src="/img/feuilles2.png"></li>
-  			<li class="layer" data-depth="2.00"><img src="/img/perroquet.png"></li>
+  			<li class="layer" data-depth="2.00"><img class="para" src=""></li>
+  			<li class="layer" data-depth="0.00"><img class="para" src="/img/logo.png"></li>
+  			<li class="layer" data-depth="0.50"><img class="para" src="/img/feuilles1.png"></li>
+  			<li class="layer" data-depth="0.00"><img class="para" src="/img/feuilles2.png"></li>
+  			<li class="layer" data-depth="2.00"><img class="para" src="/img/perroquet.png"></li>
 </ul>
   </div>
 </header>
   <!-- end header - logo-->
+
 
   <!-- Navigation -->
 
@@ -38,39 +39,32 @@
 
                 <ul class="nav navbar-nav">
 
-                  <li class="active unactive hidden-xs"><a href="nav navbar-nav">HOME</a><span class="sr-only"></span></li>
-                  <li class="active unactive hidden-xs"><a href="presentation">PRESENTATION</a><span class="sr-only"></span></li>
-                  <li class="active unactive hidden-xs">VIDEO<span class="sr-only"></span></li>
-                  <li class="dropdown hidden-xs">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="statics-pages/book.html.erb">BOOK</a></li>
-                        <li><a href="statics-pages/webedia.html.erb">WEBEDIA</a></li>
-                        <li><a href="statics-pages/illustration.html.erb">ILLUSTRATIONS</a></li>
-                        <li><a href="statics-pages/descriptif.html">LOOSER</a></li>
-                        <li><a href="statics-pages/thefreeheads.html.erb">THE FREE HEADS</a></li>
-                        <li><a href="statics-pages/biche&renard.html.erb">LA BICHE ET LE RENARD</a></li>
-                    </ul>
+                  <li class="active unactiveXs hidden-xs"><a href="#header">HOME</a><span class="sr-only"></span></li>
+
+                  <li class="active unactive hidden-xs"><a href="#presentation">PRESENTATION</a><span class="sr-only"></span></li>
+
+                  <li class="active unactive hidden-xs"><a href="#video">VIDEO</a><span class="sr-only"></span></li>
+
+                  <li class="active unactive hidden-xs"><a href="#portfolio">PORTFOLIO</a><span class="sr-only"></span></li>
+
                 </li>
-                <li class="active unactive hidden-xs">CONTACTEZ-MOI<span class="sr-only"></span></li>
+                <li class="active unactive hidden-xs"><a href="#contact">CONTACTEZ-MOI</a><span class="sr-only"></span></li>
 
 
-                  <li class="active visible-xs unactiveXs">HOME</li>
-                  <li class="active visible-xs unactiveXs">PRESENTATION</li>
-                  <li class="dropdown visible-xs">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
-                      <ul class="dropdown-menu">
-                        <li><a href="statics-pages/book.html.erb">BOOK</a></li>
-                        <li><a href="statics-pages/webedia.html.erb">WEBEDIA</a></li>
-                        <li><a href="statics-pages/illustration.html.erb">ILLUSTRATIONS</a></li>
-                        <li><a href="statics-pages/descriptif.html">LOOSER</a></li>
-                        <li><a href="statics-pages/thefreeheads.html.erb">THE FREE HEADS</a></li>
-                        <li><a href="statics-pages/biche&renard.html.erb">LA BICHE ET LE RENARD</a></li>
-                    </ul>
-                </li>
-                <li class="visible-xs">
-                      <a href="a-propos/a-propos.html">CONTACTEZ-MOI</a></li>
-                </ul>
+<!-- /.navbar XS -->
+<li class="dropdown active visible-xs">
+          <a href="#header" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HOME <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#presentation">PRESENTATION</a></li>
+            <li><a href="#video">VIDEO</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACTEZ-MOI</a></li>
+
+
+          </ul>
+</li>
+
+
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>
@@ -82,12 +76,13 @@
 
 
   <!-- Présentation-->
+  <div id="presentattion" class="container-fluid">
   <div class="row presentation">
-    <div class=" col-xs-offset-3 col-xs-3">
+    <div class="col-xs-12  col-md-offset-3 col-md-3">
       <img class="img-responsive julie" src="/img/julie.png" alt="photo de julie">
     </div>
 
-    <div class=" col-xs-3">
+    <div class="col-xs-12 text-align  col-md-3">
       <img class="img-responsive one" src="/img/1.png" alt="1 en paillettes">
       <hr>
       <h3>Présentation</h3>
@@ -98,45 +93,48 @@
       internet. N’hésitez pas à télécharger mon cv si mon profile vous interesse.
       Bonne visite !</p>
     </div>
-
+</div>
 </div>
 
 <!-- Présentation-->
 
 <!-- Vidéo-->
-<div class="row presentation">
-  <div class =" col-xs-offset-1 col-xs-2">
+<div id="video" class="container-fluid">
+<div class="row video">
+  <div class ="col-xs-12 col-md-offset-1 col-md-2">
 
-    <img class="img-responsive two" src="/img/2.png" alt="2 en paillettes">
+    <img class="img-responsive two text-align" src="/img/2.png" alt="2 en paillettes">
 </div>
 </div>
 
 
-<div class="row text video">
-  <div class=" col-xs-offset-1 col-xs-3">
+<div class="row text_video">
+  <div class=" col-xs-12 text-align  col-md-offset-1 col-md-3">
     <hr>
     <h3>Vidéo</h3>
     <p>J’aime particulièrement dessiner. Ce qui me touche en général et qui m’inspire c’est l’humanité. J’apprécie ce qui n’est pas parfait. J’aime le figuratif mais que lorsqu’il n’est pas empreint de mimésis. Ce qui m’interesse c’est l’interprétation, j’aime les représentations déformées et subjctives où l’on ressent l’homme et ses imperfections plutôt que la technicité irréprochable qui me fait penser aux productions de machines.
   Voici un petit CV dessin-animé qui vous permettra peut-etre de mieux appréhender mon univers et découvrir ma personnalité.</p>
   </div>
 
-  <div class=" col-xs-offset-1 col-xs-1">
+  <div class="col-xs-12 text-align col-md-offset-1 col-md-1">
 
-<%= link_to image_tag("/img/touche-cv.png", :border => 0, :alt => 'recevoir pdf du cv', :title => 'touche-cv'), pdf_path, :class => 'dock-item'%>
+<%= link_to image_tag("/img/touche-cv.png", :border => 0, :alt => 'recevoir pdf du cv', :title => 'touche-cv'), pdf_path, :class => 'img-responsive'%>
+</div>
 </div>
 </div>
 
 <!-- vidéo-->
 
 <!-- portfolio-->
-<div class="row portfolio">
-  <div class =" col-xs-offset-5 col-xs-2">
+<div id="portfolio" class="container-fluid">
+  <div class="row portfolio">
+  <div class ="col-xs-12 text-align col-md-offset-5 col-md-2">
     <img class="img-responsive tree" src="/img/3.png" alt="3 en paillettes">
   </div>
 </div>
 
 <div class="row text_portfolio">
-  <div class="col-xs-offset-4 col-xs-3">
+  <div class="col-xs-12 text-align col-md-offset-4 col-md-3">
     <hr>
     <h3>Portfolio</h3>
     <p>Voici les travaux que j’ai pu réaliser au cours de ma scolarité, de mes stages, ainsi que mes projets personnels. Ils se composent de créations graphiques mais également de réalisations pour le web avec du développemnt front et backend.</p>
@@ -147,14 +145,14 @@
 
 
         <!-- Projects Row -->
-        <div class="container">
+        <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 portfolio-item">
+            <div class=" col-md-3 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="/img/la_biche_et_le_renard.png" alt="accéder au site la biche te le renard">
                 </a>
             </div>
-            <div class="col-md-3 portfolio-item">
+            <div class="col-md-3 xs-12 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="/img/the_free_heads.png" alt="accéder au site the free heads">
                 </a>
@@ -170,40 +168,54 @@
                 </a>
             </div>
         </div>
+        </div>
+
+
         <!-- /.row -->
 
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-3 xs-12 portfolio-item">
-              <a href="http://julierouet.github.io/looser">
+              <a href="http://julierouet.github.io/looser" target="_blank">
                     <img class="img-responsive" src="/img/looser_site.png" alt="accéder au site Looser">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="https://issuu.com/julierouet/docs/booka4-750g">
+                <a href="https://issuu.com/julierouet/docs/booka4-750g"target="_blank">
                     <img class="img-responsive" src="/img/750g_book.png" alt="accéder au book 750gr">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="https://issuu.com/julierouet/docs/bookillustrations">
+                <a href="https://issuu.com/julierouet/docs/bookillustrations" target="_blank">
                     <img class="img-responsive" src="/img/illustrations_book.png" alt="accéder au book illustrations">
                 </a>
             </div>
             <div class="col-md-3 portfolio-item">
-                <a href="https://issuu.com/julierouet/docs/bookenligneit__com">
+                <a href="https://issuu.com/julierouet/docs/bookenligneit__com "target="_blank">
                     <img class="img-responsive" src="/img/itecom_book.png" alt="accéder au book Itecom">
                 </a>
             </div>
         </div>
+          </div>
         <!-- /.row -->
 
 
 <!-- portfolio-->
 
 <!-- contactez-moi-->
-<div>
-  <img class="img-responsive hidden-xs" src="/img/4.png" alt="4">
-    <img class="img-responsive hidden-xs" src="/img/contactez-moi.png" alt="titre contactez-moi">
+
+
+<div id="contact">
+  <div class="row">
+<img class="img-responsive col-md-offset-6 col-md-3 four" src="/img/4.png" alt="4">
+  </div>
+  <div class="row"
+
+    <img class="img-responsive col-md-offset-4 col-md-8contactez" src="/img/contactez-moi.png" alt="titre contactez-moi">
+  </div>
+</div>
+
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -249,10 +261,13 @@
 <!-- contactez-moi-->
 
 <!-- footer-->
+<div class="footer">
+
+</div>
 <img class="img-responsive hidden-xs" src="/img/fb.png" alt="lien facebook">
 <img class="img-responsive hidden-xs" src="/img/in.png" alt="lien linkedin">
 <img class="img-responsive hidden-xs" src="/img/guithub.png" alt="lien guithub">
-
+</div>
 
 <!-- footer-->
 

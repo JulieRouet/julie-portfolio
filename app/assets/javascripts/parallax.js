@@ -204,25 +204,25 @@
       case '2D':
         featureSupport = propertySupport;
         break;
-      case '3D':
-        if (propertySupport) {
-          var body = document.body || document.createElement('body');
-          var documentElement = document.documentElement;
-          var documentOverflow = documentElement.style.overflow;
-          if (!document.body) {
-            documentElement.style.overflow = 'hidden';
-            documentElement.appendChild(body);
-            body.style.overflow = 'hidden';
-            body.style.background = '';
-          }
-          body.appendChild(element);
-          element.style[jsProperty] = 'translate3d(1px,1px,1px)';
-          propertyValue = window.getComputedStyle(element).getPropertyValue(cssProperty);
-          featureSupport = propertyValue !== undefined && propertyValue.length > 0 && propertyValue !== "none";
-          documentElement.style.overflow = documentOverflow;
-          body.removeChild(element);
-        }
-        break;
+    //   case '3D':
+    //     if (propertySupport) {
+    //       var body = document.body || document.createElement('body');
+    //       var documentElement = document.documentElement;
+    //       var documentOverflow = documentElement.style.overflow;
+    //       if (!document.body) {
+    //         documentElement.style.overflow = 'hidden';
+    //         documentElement.appendChild(body);
+    //         body.style.overflow = 'hidden';
+    //         body.style.background = '';
+    //       }
+    //       body.appendChild(element);
+    //       element.style[jsProperty] = 'translate3d(1px,1px,1px)';
+    //       propertyValue = window.getComputedStyle(element).getPropertyValue(cssProperty);
+    //       featureSupport = propertyValue !== undefined && propertyValue.length > 0 && propertyValue !== "none";
+    //       documentElement.style.overflow = documentOverflow;
+    //       body.removeChild(element);
+    //     }
+    //     break;
     }
     return featureSupport;
   };
