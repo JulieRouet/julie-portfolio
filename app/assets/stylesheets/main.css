@@ -1,13 +1,95 @@
 
-/************Header**************/
+/************Header***********************************************/
 header {
 
  text-align: center!important;
  padding-top: 10%;
   padding-bottom: 10%;
   width: 100%;
+  /*height: 100vh;*/
+  }
+
+.sousnav {
+  padding-bottom: 10%;
+
 }
-/************Header**************/
+
+/************parallax**************/
+
+/*
+img {
+  display: block;
+  width: 100%;
+}
+
+
+.container-fluid {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.scene {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+.expand-width {
+  width: 100%;
+}
+
+
+
+.aspect {
+  opacity: 0.2;
+}
+
+.layer:nth-child(1) {
+  opacity: 0.15;
+}
+.layer:nth-child(1) button {
+  -webkit-transform: rotate(150deg);
+}
+
+.layer:nth-child(2) {
+  ;
+  margin-top: 15%;
+  opacity: 1.0;
+}
+.layer:nth-child(2) button {
+  -webkit-transform: rotate(120deg);
+}
+
+.layer:nth-child(3) {
+  opacity: 0.45;
+}
+.layer:nth-child(3) button {
+  -webkit-transform: rotate(90deg);
+}
+
+.layer:nth-child(4) {
+  opacity: 0.60;
+}
+.layer:nth-child(4) button {
+  -webkit-transform: rotate(60deg);
+}
+
+.layer:nth-child(5) {
+  opacity: 0.75;
+}
+.layer:nth-child(5) button {
+  -webkit-transform: rotate(30deg);
+}
+
+.layer:nth-child(6) {
+  opacity: 0.90;
+}
+.layer:nth-child(6) button {
+}*/
+
 
 
 
@@ -164,7 +246,7 @@ p {
     display: inline-block!important;
     height: 150px;
     margin-left: 40%;
-    margin-top: 10%;
+    margin-top: 90%;
 }
 
 .bouton_pdf {
@@ -177,8 +259,8 @@ p {
 .tree {
  display: inline-block!important;
    height: 150px;
-   margin-top: 3%;
-   margin-left: 15%;
+   margin-top: 70%;
+
 }
 
 
@@ -188,11 +270,11 @@ p {
 }
 
 .container {
-  margin-top: 3%;
+  margin-top: 4%;
 
 }
 
 .portfolio-item {
-    margin-bottom: 25px;
+    margin-bottom: 40px;
 }
 /***************************** portfolio ***********************/

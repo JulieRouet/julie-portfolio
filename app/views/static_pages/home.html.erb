@@ -5,8 +5,16 @@
 
 <body>
 <header>
-<img class="img-responsive" src="/img/logo.png" alt="logo de julie">
 
+  	<div class="container-fluid">
+  		<ul id="scene" class="scene">
+  			<li class="layer" data-depth="2.00"><img src=""></li>
+  			<li class="layer" data-depth="0.00"><img src="/img/logo.png"></li>
+  			<li class="layer" data-depth="0.50"><img src="/img/feuilles1.png"></li>
+  			<li class="layer" data-depth="0.00"><img src="/img/feuilles2.png"></li>
+  			<li class="layer" data-depth="2.00"><img src="/img/perroquet.png"></li>
+</ul>
+  </div>
 </header>
   <!-- end header - logo-->
 
@@ -30,8 +38,8 @@
 
                 <ul class="nav navbar-nav">
 
-                  <li class="active unactive hidden-xs">HOME<span class="sr-only"></span></li>
-                  <li class="active unactive hidden-xs">PRESENTATION<span class="sr-only"></span></li>
+                  <li class="active unactive hidden-xs"><a href="nav navbar-nav">HOME</a><span class="sr-only"></span></li>
+                  <li class="active unactive hidden-xs"><a href="presentation">PRESENTATION</a><span class="sr-only"></span></li>
                   <li class="active unactive hidden-xs">VIDEO<span class="sr-only"></span></li>
                   <li class="dropdown hidden-xs">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
@@ -66,8 +74,8 @@
               </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
           </nav>
-          <div class="visible-xs" style="height: 55px;"></div>
-          <img class="center-block img-responsive hidden-xs" src="/img/barre-sous-nav.png" alt="soulignement barre de nav">
+
+          <img class="center-block img-responsive hidden-xs sousnav" src="/img/barre-sous-nav.png" alt="soulignement barre de nav">
 
   <!-- Navigation -->
 
@@ -109,12 +117,15 @@
     <hr>
     <h3>Vidéo</h3>
     <p>J’aime particulièrement dessiner. Ce qui me touche en général et qui m’inspire c’est l’humanité. J’apprécie ce qui n’est pas parfait. J’aime le figuratif mais que lorsqu’il n’est pas empreint de mimésis. Ce qui m’interesse c’est l’interprétation, j’aime les représentations déformées et subjctives où l’on ressent l’homme et ses imperfections plutôt que la technicité irréprochable qui me fait penser aux productions de machines.
-  Voici un petit dessins-animés qui vous permettra peut-etre de mieux appréhender mon univers et découvrir ma personnalité.</p>
+  Voici un petit CV dessin-animé qui vous permettra peut-etre de mieux appréhender mon univers et découvrir ma personnalité.</p>
   </div>
-  <div class=" col-xs-offset-3 col-xs-1">
-  <%= link_to "pdf", pdf_path, class: "bouton_pdf" %>
-  </div>
+
+  <div class=" col-xs-offset-1 col-xs-1">
+
+<%= link_to image_tag("/img/touche-cv.png", :border => 0, :alt => 'recevoir pdf du cv', :title => 'touche-cv'), pdf_path, :class => 'dock-item'%>
 </div>
+</div>
+
 <!-- vidéo-->
 
 <!-- portfolio-->
@@ -128,7 +139,7 @@
   <div class="col-xs-offset-4 col-xs-3">
     <hr>
     <h3>Portfolio</h3>
-    <p>voici les travaux que j’ai pu réaliser au cours de ma scolarité, de mes stages, ainsi que mes projets personnels. Ils se composent de créations graphiques mais également de réalisations pour le web avec des projets complets Front et Backend.</p>
+    <p>Voici les travaux que j’ai pu réaliser au cours de ma scolarité, de mes stages, ainsi que mes projets personnels. Ils se composent de créations graphiques mais également de réalisations pour le web avec du développemnt front et backend.</p>
   </div>
 </div>
 
@@ -244,12 +255,17 @@
 
 
 <!-- footer-->
-<!--
-<script>
-  //
-	// // Pretty simple huh?
-	// var scene = document.getElementById('scene');
-	// var parallax = new Parallax(scene);
 
-	</script> -->
+
+
+
+
+<script>
+var scene = document.getElementById('scene');
+var parallax = new Parallax(scene);
+</script>
+
+
+
+
   </body>
